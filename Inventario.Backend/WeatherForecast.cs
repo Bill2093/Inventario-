@@ -1,8 +1,10 @@
-namespace Inventario.Backend
+﻿namespace Inventario.Backend
 {
     public class WeatherForecast
     {
         public DateOnly Date { get; set; }
+
+        public DayOfWeek Day => Date.DayOfWeek; // ← se agrega propiuedad 
 
         public int TemperatureC { get; set; }
 
@@ -10,4 +12,5 @@ namespace Inventario.Backend
 
         public string? Summary { get; set; }
     }
+
 }
